@@ -131,7 +131,7 @@ def mae_mfe_pair(order: list,
         price_data: pd.DataFrame 或 pd.Series, 以datetime為index的價格資料
                     np.array 或 list, 以陣列紀錄的價格資料
                     (DataFrame為OHLC資料；Series、Array或List則為Tick或Close資料)
-        mae_first: bool, MFE是否出現在MAE之前
+        mae_first: bool (預設為True), MFE是否出現在MAE之前
 
     return:
         results: list, 所有交易紀錄結果，交易紀錄結果為dict
